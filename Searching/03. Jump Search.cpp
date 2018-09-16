@@ -45,7 +45,6 @@ int main()
 	{	cin>>a[i];
 	}
 
-	x:
 	cout<<"\nEnter the element to be searched"<<endl;
 	cin>>e;
 
@@ -56,6 +55,5 @@ int main()
 		cout<<"\nNot found";
 	cout<<endl<<endl;
 
-	goto x;
 	return 0;
 }
