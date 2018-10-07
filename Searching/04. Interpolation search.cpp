@@ -1,3 +1,10 @@
+/*
+Interpolation search
+Running time : O(log log n) - When array is sorted and uniformly distributed.
+             : O(n) - Worst case (when array elements increase exponentially)
+Auxiliary space : O(1)
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -7,7 +14,7 @@ int interpolation_search(int *a, int n, int e)
 
     while(l<=u)
     {
-        pos=l+((e-a[l])*(u-l)/(a[u]-a[l]));         //Calculating pos related to weithedness of elements
+        pos=l+((e-a[l])*(u-l)/(a[u]-a[l]));         //Calculating pos related to weightedness of elements
         if(a[pos]==e)
             return pos;
         else if(a[pos]>e)
